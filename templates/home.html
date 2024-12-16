@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>Slavery Careers</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+        text-transform: capitalize;
+      }
+
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      img {
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+      }
+
+      h2 {
+        color: #444;
+        margin-top: 20px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      p {
+        font-size: 1.1em;
+        margin: 10px 0;
+        text-align: justify;
+      }
+
+      button {
+        display: block;
+        width: 150px;
+        margin: 20px auto;
+        padding: 10px 15px;
+        background: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #218838;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Slavery Careers</h1>
+    </header>
+
+    <main>
+      <img src="https://1248d68d-b6b6-4687-b318-6d6583a01cca-00-2hh7ydfdg8f2b.janeway.replit.dev/static/images.jpg" height="320" alt="Slavery Careers Image">
+
+      <h2>About Us</h2>
+      <p>
+        Hello Freebirds,
+        <br><br>
+        Welcome to this page where we connect you to the right master for you, so you can earn some money.
+      </p>
+
+      <h2>Open Positions</h2>
+      <div>
+        {%for job in jobs%}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+
+      <button>Contact Us</button>
+    </main>
+  </body>
+</html
